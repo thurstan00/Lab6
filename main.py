@@ -24,6 +24,7 @@ def decode(encodedPassword):
 
     return decodedPassword
 
+
 def main():
     while True:
         # Print menu with encoder and decoder options
@@ -40,7 +41,6 @@ def main():
             while len(password) != 8:
                 password = input("Enter your password: ")
             encoded_password = encode(password)
-            print(encoded_password)
 
         #smaple comment
         if option == 2:
