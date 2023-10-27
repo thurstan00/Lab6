@@ -42,6 +42,7 @@ def main():
             encoded_password = encode(password)
             print(encoded_password)
 
+        #smaple comment
         if option == 2:
             decodedPassword = decode(encoded_password)
             print(f"The encoded password is {encoded_password}, and the original password is {decodedPassword}")
