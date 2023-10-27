@@ -13,14 +13,16 @@ def encode(password):
 def decode(encodedPassword):
     decodedPassword = ""
     for num in encodedPassword:
-        if num >= 3 and num <= 9:
+        if int(num) >= 3 and int(num) <= 9:
             decodedPassword += str(int(num) - 3)
-        if num == 0:
+        elif int(num) == 0:
             decodedPassword += "7"
-        if num == 1:
+        elif int(num) == 1:
             decodedPassword += "8"
-        if num == 2:
+        elif int(num) == 2:
             decodedPassword += "9"
+
+    return decodedPassword
 
 def main():
     while True:
